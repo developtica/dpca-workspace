@@ -2,8 +2,8 @@
 
 const nextConfig = {
   env: {
-    name: 'Kasm Technologies',
-    description: 'The official store for Kasm supported workspaces.',
+    name: 'Developtica',
+    description: 'DPCA store for Kasm supported workspaces.',
     icon: '/img/logo.svg',
     listUrl: 'https://developtica.github.io/dpca-workspace/',
     contactUrl: 'https://github.com/developtica/dpca-workspace/issues',
