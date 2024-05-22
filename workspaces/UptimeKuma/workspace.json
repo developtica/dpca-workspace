@@ -8,12 +8,12 @@
     "ports": {
       "3001/tcp": {}
     },
-    "privileged": false,
-    "gpu_enabled": false,
     "environment": {
       "NODE_ENV": "production"
     }
   },
+  "privileged": false,
+  "gpu_enabled": false,
   "exec_config": {
     "go": {
       "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
