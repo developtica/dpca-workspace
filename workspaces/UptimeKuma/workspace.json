@@ -12,7 +12,6 @@
       "NODE_ENV": "production"
     }
   },
-  "privileged": false,
   "gpu_enabled": false,
   "exec_config": {
     "go": {
