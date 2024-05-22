@@ -4,7 +4,7 @@
   "groups": ["default"],
   "image_src": "uptime.jpg",
   "docker_registry": "https://index.docker.io/v1/",
-  "image": "louislam/uptime-kuma:1",
+  "image": "louislam/uptime-kuma",
   "run_config": {
       "privileged": false,
       "gpu_enabled": false,
