@@ -4,7 +4,10 @@
   "image_src": "uptime.jpg",
   "name": "louislam/uptime-kuma:1",
   "run_config": {
-    "hostname": "kasm"
+    "hostname": "kasm",
+    "ports": {
+      "3001/tcp": {}
+    }
   },
   "exec_config": {
     "go": {
