@@ -7,9 +7,6 @@
     "hostname": "kasm",
     "ports": {
       "3001/tcp": {}
-    },
-    "environment": {
-      "NODE_ENV": "production"
     }
   },
   "gpu_enabled": false,
