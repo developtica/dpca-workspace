@@ -1,0 +1,42 @@
+{
+  "name": "Uptime-Kuma",
+  "description": "Workspace for running Uptime Kuma in a KASM environment",
+  "groups": ["default"],
+  "image_src": "uptime.jpg",
+  "image": "louislam/uptime-kuma:1",
+  "run_config": {
+      "privileged": false,
+      "gpu_enabled": false,
+      "network": "kasm_default",
+      "ports": [
+          {
+              "container_port": 3001,
+              "protocol": "tcp"
+          }
+      ],
+      "environment": {
+          "NODE_ENV": "production"
+      },
+      "cmd": ["node", "server/server.js"],
+      "entrypoint": null,
+      "healthcheck": {
+          "test": ["CMD-SHELL", "curl -f http://localhost:3001 || exit 1"],
+          "interval": 60000,
+          "timeout": 10000,
+          "retries": 3,
+          "start_period": 60000
+      },
+      "cpu_allocation": 1,
+      "memory_allocation_mb": 512
+  },
+  "persisted_directories": [
+      {
+          "container_path": "/app/data",
+          "host_path": "/opt/kasm/workspaces/uptime-kuma/data"
+      }
+  ],
+  "settings": {
+      "timezone": "Etc/UTC",
+      "language": "en"
+  }
+}
